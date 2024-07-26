@@ -1,0 +1,35 @@
+/* src/components/GameBoard.css */
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.winner-message {
+  position: absolute;
+  top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
